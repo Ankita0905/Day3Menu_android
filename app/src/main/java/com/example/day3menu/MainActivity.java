@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -91,11 +92,14 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         switch (item.getItemId())
         {
         case R.id.action_add:
-        Toast.makeText(MainActivity.this,"cAdd",Toast.LENGTH_SHORT).show();
-        break;
+        Log.d("MENU","Add");
+        return true;
         case R.id.action_edit:
-        Toast.makeText(MainActivity.this,"cEdit",Toast.LENGTH_SHORT).show();
-        break;
+        Log.d("MENU","edit");
+        return true;
+            case R.id.action_delete:
+        Log.d("MENU","Delete");
+        return true;
         }
         return false;
     }
