@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Day3Menu</string>
+    <array name="array_countries">
+        <item>India</item>
+        <item>China</item>
+        <item>Uk</item>
+        <item>Us</item>
+        <item>Russia</item>
+        <item>Canada</item>
+        <item>Japan</item>
+        <item>Korea</item>
+        <item>Pakistan</item>
+        <item>Dubai</item>
+    </array>
 </resources>

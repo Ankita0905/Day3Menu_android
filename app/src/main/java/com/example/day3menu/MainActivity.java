@@ -3,6 +3,7 @@ package com.example.day3menu;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -45,7 +46,8 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         switch (item.getItemId())
         {
             case R.id.action_add:
-                Toast.makeText(MainActivity.this,"Add",Toast.LENGTH_SHORT).show();
+                Intent mIntent=new Intent(this,PickerExampleActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.action_edit:
                 Toast.makeText(MainActivity.this,"Edit",Toast.LENGTH_SHORT).show();
